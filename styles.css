@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.contact-info {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    padding-left: 10%;  /* 10% of the parent container's width */
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.current-job-title {
+    text-align: center;
+}
+
+.box {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ 
+  }
+
+  .box>* {
+    flex: 1 1 80px;
+    padding-left: 1%;
+  }
+
+
+  ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: blue; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+.education-certifications{
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.degree_and_year{
+    display: flex;
+    padding-bottom: 40px;
+}
+#grad_year{
+    padding-left: 60%;
+}
+
+h3{
+    color: blue;
+}
+
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.summary, .education-certifications, .professional-experience {
+    margin-bottom: 40px;
+}
+
+article {
+    margin-top: 20px;
+}
+
